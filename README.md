@@ -23,7 +23,7 @@ For other blogs it is also simple, just refer to [official documentation](https:
     ```json
     {
     "origins": [
-        "https://cryovit.github.io"
+        "https://{username}.github.io"
     ]
     }
     ```
@@ -34,4 +34,4 @@ For other blogs it is also simple, just refer to [official documentation](https:
     beaudar:
         repo: {username}/blog-comments
     ```
-4. Install [Github App of Beaudar](https://github.com/apps/beaudar).
+4. Install [Github App of Beaudar](https://github.com/apps/beaudar) in your comment repo.
