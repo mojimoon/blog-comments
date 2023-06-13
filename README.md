@@ -34,4 +34,16 @@ For other blogs it is also simple, just refer to [official documentation](https:
     beaudar:
         repo: {username}/blog-comments
     ```
-4. Install [Github App of Beaudar](https://github.com/apps/beaudar) in your comment repo.
+4. Install [Github App of Beaudar](https://github.com/apps/beaudar). **Only installing in comment repo is enough.**
+
+Stellar theme will use the following configuration by default:
+- Theme: Github Light/Dark (follow system)
+- Issue Title: Page Relative Path
+- Issue Body: 
+```markdown
+# {{title}}
+
+{{excerpt}}
+
+{{url}}
+```
