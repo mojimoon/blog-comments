@@ -1,6 +1,6 @@
 ## Blog Comments
 
-This is the repository for comments on my blog, [cryovit.github.io](https://cryovit.github.io).
+This is the repository for comments on my blog, [mojimoon.github.io](https://mojimoon.github.io).
 
 All the comments are stored in `Discussions` of this repository.
 
