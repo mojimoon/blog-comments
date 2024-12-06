@@ -1,6 +1,6 @@
 ## Blog Comments
 
-This is the repository for comments on my blog, [mojimoon.github.io/blog](https://mojimoon.github.io/blog).
+This is the repository for comments on my blog, [mojimoon.github.io](https://mojimoon.github.io).
 
 All the comments are stored in `Discussions` of this repository.
 
