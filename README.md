@@ -1,43 +1,43 @@
 ## Blog Comments
 
-This is the repository for comments on my blog, [mojimoon.github.io](https://mojimoon.github.io).
+The repository for comments on my blog, [mojimoon.github.io](https://mojimoon.github.io).
 
-All the comments are stored in `Discussions` of this repository.
+See [Issues](https://github.com/mojimoon/blog-comments/issues) for comments.
 
 ## How to comment
 
-Go to the blog and at the end of every page, you will find a comment section. Just comment there.
+Scroll to the end of any blog post on [mojimoon.github.io](https://mojimoon.github.io) to find the comment section. Leave your comments there.
 
 ## Build
 
-I choose [Beaudar](https://beaudar.lipk.org/) as the comment system. The static system does not require any backend. It is easy to use and deploy, and very lightweight.
+This blog uses [Beaudar](https://beaudar.lipk.org/) as the comment system. This is a static and lightweight solution that does not require a backend, making it easy to use and deploy.
 
-It is specialized for Chinese users. For international users, you can use [Utterances](https://utteranc.es/).
+Beaudar is optimized for Chinese users. For international users, consider using [Utterances](https://utteranc.es/).
 
-Here is how to configure in [Stellar theme](https://github.com/xaoxuu/hexo-theme-stellar) hexo blog.
+To configure Beaudar for the [Stellar theme](https://github.com/xaoxuu/hexo-theme-stellar), follow these steps:
 
-For other blogs it is also simple, just refer to [official documentation](https://beaudar.lipk.org/).
-
-1. Create a new repository for comments, for example, `{username}/blog-comments`.
-2. Add a file named `beaudar.json` to the root directory of comment repo. Its content:
+1. Create a new public repository for comments, e.g., `{username}/blog-comments`.
+2. Add a file named `beaudar.json` to the root directory of the comment repository:
     ```json
     {
-    "origins": [
+      "origins": [
         "https://{username}.github.io"
-    ]
+      ]
     }
     ```
-3. Append the following content to your blog theme config file `_config.stellar.yml`:
+    For repository GitHub Pages (e.g. `{username}.github.io/{repo}`), **stick to the above format**. For custom domains, append your custom domain URL to the `origins` array.
+3. Append the following configuration to your blog theme's `_config.stellar.yml` file:
     ```yaml
     comments:
-    service: beaudar
-    beaudar:
+      service: beaudar
+      beaudar:
         repo: {username}/blog-comments
     ```
-4. Install [Github App of Beaudar](https://github.com/apps/beaudar). **Only installing in comment repo is enough.**
+4. Install the [Beaudar GitHub App](https://github.com/apps/beaudar) in your comment repository.
 
-Stellar theme will use the following configuration by default:
-- Theme: Github Light/Dark (follow system)
+Here are the default configurations used by the Stellar theme:
+
+- Theme: GitHub Light/Dark (follows system settings)
 - Issue Title: Page Relative Path
 - Issue Body: 
 ```markdown
